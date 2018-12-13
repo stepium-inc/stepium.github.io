@@ -64,11 +64,12 @@ body {
   color: #000000;
   float: left;
   width: 100%;
-  min-width: 860px;
   -webkit-font-smoothing: subpixel-antialiased !important;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-weight: normal;
+  min-width: 1024px;}
 
 a:link, a:visited {
   color: #000000;
@@ -268,7 +269,7 @@ html, body {
   bottom: 0;
   width: 100%;
   float: left;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .header-trigger-item{
   float: left;
@@ -429,4 +430,93 @@ html, body {
   float: left;
   background: url(./images/arrow-right.svg);
   background-size: cover;
+}
+
+.info{
+  float: left;
+  width: 100%;
+  background: url(./images/bg-dark.jpg);
+  background-size: cover;
+  padding: 60px 0;
+}
+.info-content{
+  float: left;
+  width: 50%;
+}
+.info-content-title{
+  font-size: 48px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  margin: 0 0 25px 0;
+  float: left;
+  width: 100%;
+}
+.info-content-list{
+  float: left;
+  width: 100%;
+}
+.info-content-list li{
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding-left: 35px;
+  box-sizing: border-box;
+}
+.info-content-list li:after{
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  background: url(./images/mark.svg);
+}
+.info-content-list li b{
+  font-size: 22px;
+  font-weight: normal;
+}
+.info-video{
+  float: left;
+  width: 50%;
+}
+.info-video-wrap{
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  display: block;
+  margin: auto;
+  background: #263147;
+}
+
+.footer{
+  float: left;
+  width: 100%;
+  background: #06122B;
+  padding: 60px 0;
+}
+.footer-txt{
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.5);
+}
+.footer-txt p{
+  float: left;
+  width: 100%;
+}
+.footer-txt p + p{
+  margin-top: 15px;
+}
+.footer-logo{
+  width: 25px;
+  display: block;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.footer-logo img{
+  width: 100%;
 }
