@@ -439,6 +439,8 @@ html, body {
   background-size: cover;
   padding: 60px 0;
   padding-bottom: 20px;
+  background-attachment: fixed;
+  background-position: center;
 }
 .info .wrapper{
   overflow: inherit;
