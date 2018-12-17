@@ -40,7 +40,7 @@ function Stepium() {
 				};
                 $.ajax({
                     type: 'POST',
-                    url: 'http://api.dev.kylbaba.com/api/v2/users/create/user/landing/',
+                    url: 'https://api.stepium.com/api/v2/users/create/user/landing/',
                     data: body,
 					success: function(result){
 						alert('Регистрация прошла успешно! На указанный вами e-mail '+ order.email +' было отправлено письмо с подтверждением регистрации!');
