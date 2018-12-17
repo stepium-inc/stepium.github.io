@@ -233,6 +233,10 @@ html, body {
   padding: 15px 10px;
   border-radius: 1px;
   box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+}
+.header-form-field input.error{
+  border: 1px solid red;
 }
 .header-form-field p{
   font-size: 13px;
@@ -527,7 +531,9 @@ html, body {
   padding: 15px 10px;
   border-radius: 1px;
   box-sizing: border-box;
-
+}
+.info-form-field input.error{
+  border: 1px solid red;
 }
 .info-form-field+.info-form-field{
   margin-left: 2%;
