@@ -61,6 +61,7 @@ function Stepium() {
                 });
             }
             if($('.reg-form')[0].checkValidity()) return false;
+            if($('.reg-form-2')[0].checkValidity()) return false;
         });
 
 	}
