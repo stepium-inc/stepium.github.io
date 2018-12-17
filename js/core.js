@@ -26,7 +26,7 @@ function Stepium() {
                 error0 = true;
             }
 
-            var r = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var r = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
             if (!r.test(order.email)) {
                 a.closest('form').find('.email').addClass('error');
                 error0 = true;
@@ -51,14 +51,16 @@ function Stepium() {
                     error: function (error) {
 						if(error['responseJSON']['code'] == 105){
                             alert('Ошибка! Такой email уже существует');
-						}else{
+						} if(error['responseJSON']['email']){
+                            alert('Ошибка! ' + error['responseJSON']['email'][0]);
+                        }else{
                             alert('Ошибка! ' + error['responseJSON']['message']);
 						}
                     },
                     dataType: 'json'
                 });
             }
-            return false;
+            if($('.reg-form')[0].checkValidity()) return false;
         });
 
 	}

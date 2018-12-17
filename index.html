@@ -30,22 +30,22 @@
 						</div>
 					</div>
 					<div class="header-content-box">
-						<form class="header-form">
+						<form class="header-form reg-form">
 							<span class="header-form-title">Присоединяйся!</span>
 							<div class="header-form-field">
-								<input type="text" placeholder="Имя" class="name"/>
+                                <input type="text" placeholder="Имя" class="name" name="name" required>
 							</div>
 							<div class="header-form-field">
-								<input type="email" placeholder="E-mail" class="email"/>
+								<input type="email" placeholder="E-mail" class="email" name="email" required/>
 							</div>
 							<div class="header-form-field">
 								<input type="phone" placeholder="Телефон*" class="phone"/>
 								<p>* Необязательное поле</p>
 							</div>
 							<div class="header-form-field">
-								<div class="header-form-button send-form-data">
+								<button class="header-form-button send-form-data">
 									Начать зарабатывать
-								</div>
+								</button>
 							</div>
 						</form>
 					</div>
@@ -141,17 +141,17 @@
 		</div>
 		<div class="info-form">
 			<div class="wrapper">
-				<form>
+				<form class="reg-form">
 					<div class="info-form-field">
-						<input type="text" placeholder="Имя" class="name">
+						<input type="text" placeholder="Имя" class="name" name="name" required>
 					</div>
 					<div class="info-form-field">
-						<input type="email" placeholder="E-mail" class="email">
+						<input type="email" placeholder="E-mail" class="email" name="email" required>
 					</div>
 					<div class="info-form-field">
-						<div class="info-form-field-button send-form-data">
+						<button class="info-form-field-button send-form-data">
 							Начать зарабатывать
-						</div>
+						</button>
 					</div>
 				</form>
 			</div>
