@@ -569,16 +569,16 @@ html, body {
 .footer-txt{
   float: left;
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.25);
 }
 .footer-txt p{
   float: left;
   width: 100%;
 }
 .footer-txt p + p{
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .footer-logo{
   width: 25px;
