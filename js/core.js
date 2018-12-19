@@ -12,6 +12,12 @@ function Stepium() {
             var order = {};
             var a = $(this);
 
+            gtag('event', 'КнопкаНачатьЗарабатывать', {
+                    'event_category': 'КнопкаНачатьЗарабатывать',
+                    'event_label': 'Клик',
+                    'value': 'Клик'
+            });
+
             a.closest('form').find('.name').removeClass('error');
             a.closest('form').find('.email').removeClass('error');
 
